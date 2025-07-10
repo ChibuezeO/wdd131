@@ -6,6 +6,10 @@ span {
     text-align: center;
 }
 
+main {
+    max-width: fit-content;
+}
+
 nav {
     background-color: black;
     padding: 1rem;
@@ -21,6 +25,7 @@ nav a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav a:hover {
@@ -54,7 +59,7 @@ section {
     align-items: flex-start;
 }
 
-.card h3 {
+.card h2 {
     background-color: darkblue;
     padding: 0.8rem;
     text-align: center;
