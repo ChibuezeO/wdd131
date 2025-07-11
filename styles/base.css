@@ -125,6 +125,7 @@ aside {
 
 .card li {
     justify-content: center;
+    padding: 10px;
 }
 
 footer {
