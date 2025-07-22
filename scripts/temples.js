@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const footerContent = document.getElementById('footer-content');
     const currentYear = new Date().getFullYear();
     const lastModified = document.lastModified;
-    footerContent.innerHTML = `© ${currentYear} Hyacinth Chibueze Okoro ✔ Last Modified: ${lastModified}`;
+    footerContent.innerHTML = `© ${currentYear} Hyacinth Chibueze Okoro ✔ Awka, Nigeria.`;
+    document.getElementById('last-modified').textContent = `Last Modified: ${lastModified}`;
 });
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
