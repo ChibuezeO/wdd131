@@ -16,6 +16,7 @@ header {
     color: #F5F6F5;
     text-align: center;
     padding: 1rem;
+    position: relative;
 }
 
 header h1 {
@@ -29,6 +30,26 @@ nav ul {
     flex-direction: column;
     gap: 0.5rem;
     list-style: none;
+}
+
+.hamburger {
+    display: block;
+    background: none;
+    border: none;
+    color: #F5F6F5;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-menu.active {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
 }
 
 nav a {
