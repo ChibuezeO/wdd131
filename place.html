@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a design and development of a web page about my country where I live.">
+    <meta name="author" content="Hyacinth Chibueze Okoro">
+    <title>country or Place page | Nigeria</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/kangaroo.webp" type="image/webp">
+                <source media="(max-width: 767px)" srcset="images/kangaroo-small.webp" type="image/webp">
+                <img src="images/kangaroo.webp" alt="Lemur in Madagascar landscape">
+            </picture>
+
+            <section class="content-wrapper">
+                <section class="data">
+                    <h2>Data</h2>
+                    <ul>
+                        <li><strong>Area:</strong> 923,768 sq km</li>
+                        <li><strong>Population:</strong> 237,527,782</li>
+                        <li><strong>Capital:</strong> Abuja</li>
+                        <li><strong>Languages:</strong> Igbo, Yoruba, Housa, English</li>
+                        <li><strong>Currency:</strong> Nigerian Naira</li>
+                        <li><strong>Time Zone:</strong> GMT+1</li>
+                        <li><strong>Calling Code:</strong> +234</li>
+                        <li><strong>Internet TLD:</strong> .ng</li>
+                    </ul>
+                </section>
+            </section>
+
+
+            <section class="second-wrapper">
+                <section class="weather">
+                    <h2>Weather</h2>
+                    <div class="weather-icon">🌤️</div>
+                    <ul>
+                        <li><strong>Temperature:</strong> 24°C</li>
+                        <li><strong>Conditions:</strong> Sunny</li>
+                        <li><strong>Wind:</strong> 5 km/h</li>
+                        <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
+                    </ul>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy;<span id="current-year"></span> ✔ Hyacinth Chibueze Okoro ✔ Awka, Nigeria</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
