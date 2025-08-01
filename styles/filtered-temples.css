@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F6F5;
+    color: #2E2E2E;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4A6366;
+    color: #F5F6F5;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.hamburger {
+    display: block;
+    background: none;
+    border: none;
+    color: #F5F6F5;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-menu.active {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+nav a {
+    color: #F5F6F5;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #D4A373;
+    transform: scale(1.05);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    color: #2E2E2E;
+}
+
+figcaption h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #4A6366;
+    color: #F5F6F5;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
