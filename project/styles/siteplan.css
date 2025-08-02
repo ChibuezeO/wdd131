@@ -1,0 +1,98 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+header,
+footer {
+    background-color: #006600;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    color: #006600;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+p,
+li {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ccac00;
+}
+
+section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.wireframe-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.wireframe-table td {
+    border: 1px solid #006600;
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wireframe-table td:hover {
+    background-color: #FFD700;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .wireframe-table td {
+        font-size: 0.9em;
+    }
+}
