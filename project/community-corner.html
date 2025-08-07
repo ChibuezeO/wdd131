@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a section of the Naija Food Hub where our visitors make their own input.">
+    <meta name="author" content="Hyacinth Chibueze Okoro">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
+    <title>Community Corner - Naija Food Heritage Hub</title>
+    <link rel="stylesheet" href="styles/naija-foodhub.css">
+    <link rel="stylesheet" href="styles/naija-foodhub-small.css" media="screen and (max-width: 768px)">
+    <script src="scripts/naija-foodhub.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Naija Food Heritage Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="naija-foodhub.html">Home</a></li>
+                <li><a href="food-stories.html">Food Stories</a></li>
+                <li><a href="local-ingredients.html">Recipes</a></li>
+                <li><a href="community-corner.html" class="active">Community Corner</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="community-corner">
+            <h2>Community Corner</h2>
+            <p>Share your family recipes, food memories, or stories about local food festivals.</p>
+            <form id="communityForm">
+                <label for="submissionType">Submission Type:</label>
+                <select id="submissionType" required>
+                    <option value="">Select Type</option>
+                    <option value="Recipe">Recipe</option>
+                    <option value="Food Memory">Food Memory</option>
+                    <option value="Local Food Story">Local Food Story</option>
+                </select>
+                <label for="submissionTitle">Title:</label>
+                <input type="text" id="submissionTitle" required>
+                <label for="submissionRegion">Region (Optional):</label>
+                <select id="submissionRegion">
+                    <option value="">Select Region</option>
+                    <option value="Yoruba">Yoruba</option>
+                    <option value="Igbo">Igbo</option>
+                    <option value="Hausa">Hausa</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="submissionDescription">Description:</label>
+                <textarea id="submissionDescription" required></textarea>
+                <button type="submit">Submit Your Story</button>
+            </form>
+            <div id="formMessage"></div>
+            <div id="communityPosts">
+                <h3>Recent Submissions</h3>
+                <p>No submissions yet. Be the first to share!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-content"></p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+
+</html>

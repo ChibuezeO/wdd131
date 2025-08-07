@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Naija Food Hub main page, showcasing nigerian delcacies.">
+    <meta name="author" content="Hyacinth Chibueze Okoro">
+    <title>Product Review Form Page</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
+    <title>Naija Food Heritage Hub</title>
+    <link rel="stylesheet" href="styles/naija-foodhub.css">
+    <link rel="stylesheet" href="styles/naija-foodhub-small.css" media="screen and (max-width: 768px)">
+    <script src="scripts/naija-foodhub.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Naija Food Heritage Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="naija-foodhub.html">Home</a></li>
+                <li><a href="local-ingredients.html">Recipes</a></li>
+                <li><a href="community-corner.html">Community Corner</a></li>
+                <li><a href="food-stories.html">Food Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Naija Food Heritage</h2>
+            <p>Celebrating the rich and diverse culinary traditions of Nigeria, from jollof rice to egusi soup.</p>
+            <img src="images/jollof.jpg" alt="Nigerian Food">
+        </section>
+
+        <section id="recipes">
+            <h2>Regional Recipes</h2>
+            <input type="text" id="recipeSearch" placeholder="Search recipes...">
+            <div id="recipeList">
+                <div class="recipe-card">
+                    <h3>Jollof Rice</h3>
+                    <p>A spicy, tomato-based rice dish loved across Nigeria.</p>
+                    <p><strong>Region:</strong> Nationwide</p>
+                </div>
+                <div class="recipe-card">
+                    <h3>Egusi Soup</h3>
+                    <p>A rich, melon-seed-based soup often served with pounded yam.</p>
+                    <p><strong>Region:</strong> Igbo</p>
+                </div>
+                <div class="recipe-card">
+                    <h3>Suya</h3>
+                    <p>Spicy grilled meat skewers, a Northern Nigerian delicacy.</p>
+                    <p><strong>Region:</strong> Hausa</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="community">
+            <h2>Share Your Recipe</h2>
+            <form id="recipeForm">
+                <label for="recipeName">Recipe Name:</label>
+                <input type="text" id="recipeName" required>
+                <label for="recipeRegion">Region:</label>
+                <select id="recipeRegion" required>
+                    <option value="">Select Region</option>
+                    <option value="Yoruba">Yoruba</option>
+                    <option value="Igbo">Igbo</option>
+                    <option value="Hausa">Hausa</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="recipeDescription">Description:</label>
+                <textarea id="recipeDescription" required></textarea>
+                <button type="submit">Submit Recipe</button>
+            </form>
+            <div id="formMessage"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-content"></p>
+        <p id="last-modified"></p>
+    </footer>
+
+
+</body>
+
+</html>
